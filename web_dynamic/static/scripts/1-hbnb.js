@@ -15,6 +15,8 @@ $(document).ready(() => {
       }
     }
     let amenText = $(".amenities h4");
+    amenText.css("text-overflow", "ellipsis");
+    amenText.css("white-space", "nowrap");
     amenText.html("&nbsp;");
     initWidth = amenText.width();
     let i = 0, b = 0;
